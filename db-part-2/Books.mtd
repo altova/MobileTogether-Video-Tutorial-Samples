@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileTogetherDesign versionClient="58" versionServer="58">
+	<DesignRoot id="1">
+		<children>
+			<DesignPage id="2">
+				<style name="Main Page"/>
+				<children>
+					<DesignTable id="117">
+						<style name="Table1"/>
+						<children>
+							<DesignTableCol id="118"/>
+							<DesignTableCol id="119">
+								<style colWidth="20%"/>
+							</DesignTableCol>
+							<DesignTableRowGroup id="120" pageXML="157">
+								<style addDelPossible="0"/>
+								<children>
+									<DesignTableRow id="121">
+										<children>
+											<DesignTable id="122">
+												<style name="Table2"/>
+												<children>
+													<DesignTableCol id="123">
+														<style colWidth="wrap_content"/>
+													</DesignTableCol>
+													<DesignTableCol id="124"/>
+													<DesignTableRow id="125">
+														<children>
+															<DesignLabel id="126">
+																<style italic="1" marginRight="5px" name="Label1" text="Title" textSize="small"/>
+															</DesignLabel>
+															<DesignLabel id="130" pageXML="159">
+																<style name="Label2" textSize="small"/>
+															</DesignLabel>
+														</children>
+													</DesignTableRow>
+													<DesignTableRow id="134">
+														<children>
+															<DesignLabel id="168">
+																<style italic="1" marginRight="5px" name="Label3" text="Author" textSize="small"/>
+															</DesignLabel>
+															<DesignLabel id="173" pageXML="160">
+																<style name="Label8" textSize="small"/>
+															</DesignLabel>
+														</children>
+													</DesignTableRow>
+													<DesignTableRow id="137">
+														<children>
+															<DesignLabel id="169">
+																<style italic="1" marginRight="5px" name="Label4" text="ISBN" textSize="small"/>
+															</DesignLabel>
+															<DesignLabel id="174" pageXML="161">
+																<style name="Label9" textSize="small"/>
+															</DesignLabel>
+														</children>
+													</DesignTableRow>
+													<DesignTableRow id="140">
+														<children>
+															<DesignLabel id="170">
+																<style italic="1" marginRight="5px" name="Label5" text="Publisher" textSize="small"/>
+															</DesignLabel>
+															<DesignLabel id="175" pageXML="162">
+																<style name="Label10" textSize="small"/>
+															</DesignLabel>
+														</children>
+													</DesignTableRow>
+													<DesignTableRow id="143">
+														<children>
+															<DesignLabel id="171">
+																<style italic="1" marginRight="5px" name="Label6" text="Pages" textSize="small"/>
+															</DesignLabel>
+															<DesignLabel id="176" pageXML="163">
+																<style name="Label11" textSize="small"/>
+															</DesignLabel>
+														</children>
+													</DesignTableRow>
+													<DesignTableRow id="146">
+														<children>
+															<DesignLabel id="172">
+																<style italic="1" marginRight="5px" name="Label7" text="Year" textSize="small"/>
+															</DesignLabel>
+															<DesignLabel id="177" pageXML="164">
+																<style name="Label12" textSize="small"/>
+															</DesignLabel>
+														</children>
+													</DesignTableRow>
+												</children>
+											</DesignTable>
+											<DesignImage id="178" pageXML="165">
+												<style align="center" name="Image1"/>
+												<ImgFileSettings id="179" imgSrcType="base64"/>
+											</DesignImage>
+										</children>
+									</DesignTableRow>
+									<DesignTableRow id="150">
+										<children>
+											<DesignHLine id="114">
+												<style colSpan="2" name="Horizontal Line1"/>
+											</DesignHLine>
+										</children>
+									</DesignTableRow>
+								</children>
+							</DesignTableRowGroup>
+						</children>
+					</DesignTable>
+				</children>
+				<xmlRoots>
+					<PageXMLRootRef id="152" refXMLRoot="154"/>
+				</xmlRoots>
+			</DesignPage>
+		</children>
+	</DesignRoot>
+	<PageXMLNamespaceRoot id="57">
+		<children>
+			<PageXMLNamespace id="58" defNS="1"/>
+		</children>
+	</PageXMLNamespaceRoot>
+	<PageXMLPersistentRoot id="59" name="PERSISTENT">
+		<children>
+			<PageXMLElement id="60" name="Root"/>
+		</children>
+	</PageXMLPersistentRoot>
+	<PageXMLRoots id="56">
+		<children>
+			<PageXMLRootDB id="154" name="Books">
+				<children>
+					<PageXMLElement id="155" name="DB" from="db">
+						<children>
+							<PageXMLElement id="156" name="RowSet" from="db">
+								<children>
+									<PageXMLElement id="157" name="Row" from="db">
+										<children>
+											<PageXMLAttribute id="158" name="ID" from="db" primaryKey="1" autoIncrement="1" readOnly="1"/>
+											<PageXMLAttribute id="159" name="Title" from="db"/>
+											<PageXMLAttribute id="160" name="Author" from="db"/>
+											<PageXMLAttribute id="161" name="ISBN" from="db"/>
+											<PageXMLAttribute id="162" name="Publisher" from="db"/>
+											<PageXMLAttribute id="163" name="NumPages" from="db"/>
+											<PageXMLAttribute id="164" name="Year" from="db"/>
+											<PageXMLAttribute id="165" name="Image" from="db"/>
+										</children>
+									</PageXMLElement>
+								</children>
+							</PageXMLElement>
+						</children>
+					</PageXMLElement>
+				</children>
+				<dbSelection so="1" id="167" dbSource_so="153">
+					<dbSelectionDescription>
+						<tableDescriptions>
+							<table name="Books">
+								<colDescriptions>
+									<col name="ID" PK="1" fixed="1" autoIncrement="1" dataType="mt_bigint"/>
+									<col name="Title" dataType="mt_string"/>
+									<col name="Author" dataType="mt_string"/>
+									<col name="ISBN" dataType="mt_string"/>
+									<col name="Publisher" dataType="mt_string"/>
+									<col name="NumPages" dataType="mt_bigint"/>
+									<col name="Year" dataType="mt_bigint"/>
+									<col name="Image" dataType="mt_string"/>
+								</colDescriptions>
+							</table>
+						</tableDescriptions>
+					</dbSelectionDescription>
+				</dbSelection>
+			</PageXMLRootDB>
+		</children>
+	</PageXMLRoots>
+	<WorkflowRoot id="53">
+		<children>
+			<WorkflowPageRef id="54" page="2"/>
+		</children>
+	</WorkflowRoot>
+	<GlobalVariables id="61">
+		<children>
+			<GlobalVariable id="62" sysVar="MT_Android" idxIcon_so="0"/>
+			<GlobalVariable id="63" sysVar="MT_iOS" idxIcon_so="1"/>
+			<GlobalVariable id="64" sysVar="MT_Browser" idxIcon_so="2"/>
+			<GlobalVariable id="65" sysVar="MT_iPad" idxIcon_so="3"/>
+			<GlobalVariable id="66" sysVar="MT_Windows" idxIcon_so="6"/>
+			<GlobalVariable id="67" sysVar="MT_WindowsPhone" idxIcon_so="7"/>
+			<GlobalVariable id="68" sysVar="MT_DeviceWidth"/>
+			<GlobalVariable id="69" sysVar="MT_DeviceHeight"/>
+			<GlobalVariable id="70" sysVar="MT_DPIX"/>
+			<GlobalVariable id="71" sysVar="MT_DPIY"/>
+			<GlobalVariable id="72" sysVar="MT_Landscape" idxIcon_so="4"/>
+			<GlobalVariable id="73" sysVar="MT_Portrait" idxIcon_so="5"/>
+			<GlobalVariable id="74" sysVar="MT_CanvasX"/>
+			<GlobalVariable id="75" sysVar="MT_CanvasY"/>
+			<GlobalVariable id="76" sysVar="MT_ClientLanguage"/>
+			<GlobalVariable id="77" sysVar="MT_TelephonyAvailable" idxIcon_so="20"/>
+			<GlobalVariable id="78" sysVar="MT_SMSAvailable" idxIcon_so="21"/>
+			<GlobalVariable id="79" sysVar="MT_ButtonTextColor"/>
+			<GlobalVariable id="80" sysVar="MT_ButtonBackgroundColor"/>
+			<GlobalVariable id="81" sysVar="MT_EditFieldTextColor"/>
+			<GlobalVariable id="82" sysVar="MT_EditFieldBackgroundColor"/>
+			<GlobalVariable id="83" sysVar="MT_LabelTextColor"/>
+			<GlobalVariable id="84" sysVar="MT_LabelBackgroundColor"/>
+			<GlobalVariable id="85" sysVar="MT_PageBackgroundColor"/>
+			<GlobalVariable id="86" sysVar="MT_FirstPageLoad"/>
+			<GlobalVariable id="87" sysVar="MT_TargetNode"/>
+			<GlobalVariable id="88" sysVar="MT_ControlKind"/>
+			<GlobalVariable id="89" sysVar="MT_ControlName"/>
+			<GlobalVariable id="90" sysVar="MT_ControlNode"/>
+			<GlobalVariable id="91" sysVar="MT_PageName"/>
+			<GlobalVariable id="92" sysVar="MT_UserName"/>
+			<GlobalVariable id="93" sysVar="MT_UserRoles"/>
+			<GlobalVariable id="94" sysVar="MT_ControlValue"/>
+			<GlobalVariable id="95" sysVar="MT_ControlValueBeforeChange"/>
+			<GlobalVariable id="96" sysVar="MT_SimulationMode"/>
+			<GlobalVariable id="97" sysVar="MT_DBExecute_Result"/>
+			<GlobalVariable id="98" sysVar="MT_CameraAvailable"/>
+			<GlobalVariable id="99" sysVar="MT_GeolocationAvailable"/>
+			<GlobalVariable id="100" sysVar="MT_InputParameters"/>
+			<GlobalVariable id="101" sysVar="MT_HTTPExecute_Result"/>
+			<GlobalVariable id="102" sysVar="MT_ServerConnectionErrorLocation"/>
+			<GlobalVariable id="103" sysVar="MT_IsAppStoreApp"/>
+			<GlobalVariable id="104" sysVar="MT_WindowWidth"/>
+			<GlobalVariable id="105" sysVar="MT_WindowHeight"/>
+			<GlobalVariable id="106" sysVar="MT_AudioChannel"/>
+			<GlobalVariable id="107" sysVar="MT_TableColumnContext"/>
+			<GlobalVariable id="108" sysVar="MT_NFCAvailable"/>
+			<GlobalVariable id="109" sysVar="MT_IsEmbedded"/>
+		</children>
+	</GlobalVariables>
+	<DBSourcesRoot so="1" id="55">
+		<children>
+			<DBSource id="153">
+				<dbDesignerInfo name="Books"/>
+				<dbContextInfo catalog="main" connection="Books.sqlite" contextType="sqlite" databaseMajorVersion="3" disable_foreign_keys="0" vendor="sqlite"/>
+			</DBSource>
+		</children>
+	</DBSourcesRoot>
+	<CustomerAppSettings so="1" id="52"/>
+</MobileTogetherDesign>
